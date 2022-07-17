@@ -11,14 +11,14 @@ async function main() {
 
   await deployedTarget.deployed();
 
-  /*console.log("Verifying Contract...")
+  console.log("Verifying Contract...")
 
   await pending(60000);
    
   await hre.run("verify:verify", {
     address:deployedTarget.address,
     constructorArguments: [],
-  });*/
+  });
 
   console.log("Target contract depolyed to", deployedTarget.address);
   
@@ -29,14 +29,14 @@ async function main() {
   await deployedStaker.deployed();
   
   
-  /*console.log("Verifying Contract...")
+  console.log("Verifying Contract...")
   
   await pending(60000);
    
   await hre.run("verify:verify", {
     address:deployedStaker.address,
     constructorArguments: [deployedTarget.address],
-  });*/
+  });
 
   console.log("staker contract depolyed to", deployedStaker.address);
 }
